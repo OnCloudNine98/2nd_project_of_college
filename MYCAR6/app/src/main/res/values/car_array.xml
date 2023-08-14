@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brandName">
+        <item>브랜드</item>
+        <item>현대</item>
+        <item>기아</item>
+        <item>도요타</item>
+        <item>폭스바겐</item>
+        <item>BMW</item>
+
+    </string-array>
+
+
+
+
+    <string-array name="hyundaiModel">
+        <item>그랜저</item>
+        <item>그랜저 Hybrid</item>
+        <item>아반떼</item>
+        <item>아반떼 Hybrid</item>
+        <item>쏘나타</item>
+        <item>쏘나타 Hybrid</item>
+    </string-array>
+
+    <string-array name="KiaModel">
+        <item>K3</item>
+        <item>K5</item>
+        <item>K8</item>
+        <item>K9</item>
+        <item>쏘나타</item>
+        <item>쏘나타 Hybrid</item>
+    </string-array>
+
+    <string-array name="toyotaModel">
+        <item>GR86</item>
+        <item>Carmy Hybrid</item>
+        <item>Carmy</item>
+        <item>Avalon Hybrid</item>
+        <item>Avalon</item>
+        <item>Sienna</item>
+        <item>Prius</item>
+        <item>Rav4 Hybrid</item>
+    </string-array>
+
+    <string-array name="volkswagenModel">
+        <item>제타</item>
+        <item>비틀</item>
+        <item>골프</item>
+        <item>파사트</item>
+        <item>투아렉</item>
+    </string-array>
+
+    <string-array name="BMWModel">
+        <item>1시리즈</item>
+        <item>2시리즈</item>
+        <item>3시리즈</item>
+        <item>4시리즈</item>
+        <item>5시리즈</item>
+        <item>6시리즈</item>
+        <item>7시리즈</item>
+        <item>8시리즈</item>
+        <item>1시리즈</item>
+
+
+
+
+
+    </string-array>
+</resources>

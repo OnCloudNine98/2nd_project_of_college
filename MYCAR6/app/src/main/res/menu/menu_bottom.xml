@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--네비게이션 바-->
+
+    <item
+        android:id="@+id/matchTab"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/home_test"
+        android:iconTint="#2E8379"
+        android:title="홈"/>
+    <item
+        android:id="@+id/msgTab"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/message_test"
+        android:title="채팅"/>
+    <item
+        android:id="@+id/feedbackTab"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/feedback_test"
+        android:title="피드백" />
+    <item
+        android:id="@+id/infoTab"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/people_test"
+        android:title="내 정보"/>
+</menu>

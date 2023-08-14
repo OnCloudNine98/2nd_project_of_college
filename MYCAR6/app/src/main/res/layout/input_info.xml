@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/UpperArea"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#297FB8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/toPreviousPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/input_info_arrow_"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin='23dp'
+            />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="차량 관리 정보"
+            android:textSize="35dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/carNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="차량번호:"
+        android:textSize="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/UpperArea"/>
+
+        <EditText
+            android:id="@+id/inputCarNum"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:hint="00가0000"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/UpperArea"
+            app:layout_constraintLeft_toRightOf="@id/carNum"
+            />
+
+    <Spinner
+        android:id="@+id/carBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/UpperArea"
+        />
+    <Spinner
+        android:id="@+id/carModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/carBrand"
+        app:layout_constraintTop_toBottomOf="@id/UpperArea"
+        />
+
+
+    <EditText
+        android:id="@+id/inputCarModelName"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="차량 모델명을 입력해주세요."
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@id/carBrand"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/maintenance_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 차량 정비 날짜"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCarModelName"/>
+
+
+
+        <EditText
+            android:id="@+id/input_maintenance_date_month"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputCarModelName"
+            app:layout_constraintLeft_toRightOf="@id/maintenance_date"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_maintenance_date_month"
+            app:layout_constraintTop_toBottomOf="@+id/inputCarModelName"/>
+
+        <EditText
+            android:id="@+id/input_maintenance_date_day"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputCarModelName"
+            app:layout_constraintLeft_toRightOf="@id/maintenance_date_month"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_maintenance_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/inputCarModelName"/>
+
+
+    <TextView
+        android:id="@+id/engineoil_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 엔진 오일 교체 날짜"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintenance_date"/>
+
+
+        <EditText
+            android:id="@+id/input_engineoil_date_month"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/maintenance_date"
+            app:layout_constraintLeft_toRightOf="@id/engineoil_date"
+            />
+
+        <TextView
+            android:id="@+id/engineoil_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_engineoil_date_month"
+            app:layout_constraintTop_toBottomOf="@+id/maintenance_date"/>
+
+        <EditText
+            android:id="@+id/input_engineoil_date_day"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/maintenance_date"
+            app:layout_constraintLeft_toRightOf="@id/engineoil_date_month"
+            />
+
+        <TextView
+            android:id="@+id/engineoil_date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_engineoil_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/maintenance_date"/>
+
+    <TextView
+        android:id="@+id/changingtire_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 타이어 교체 날짜"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/engineoil_date"/>
+
+
+        <EditText
+            android:id="@+id/input_changingtire_date_month"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/engineoil_date"
+            app:layout_constraintLeft_toRightOf="@id/changingtire_date"
+            />
+
+        <TextView
+            android:id="@+id/changingtire_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_changingtire_date_month"
+            app:layout_constraintTop_toBottomOf="@+id/engineoil_date"/>
+
+        <EditText
+            android:id="@+id/input_changingtire_date_day"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/engineoil_date"
+            app:layout_constraintLeft_toRightOf="@id/changingtire_date_month"
+            />
+
+        <TextView
+            android:id="@+id/changingtire_date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_changingtire_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/engineoil_date"/>
+
+
+    <TextView
+        android:id="@+id/changingPPF_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 PPF필름 교체 날짜"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changingtire_date"/>
+
+
+        <EditText
+            android:id="@+id/input_changingPPF_date_month"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/changingtire_date"
+            app:layout_constraintLeft_toRightOf="@id/changingPPF_date"
+            />
+
+        <TextView
+            android:id="@+id/changingPPF_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_changingPPF_date_month"
+            app:layout_constraintTop_toBottomOf="@+id/changingtire_date"/>
+
+        <EditText
+            android:id="@+id/input_changingPPF_date_day"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/changingtire_date"
+            app:layout_constraintLeft_toRightOf="@id/changingPPF_date_month"
+            />
+
+        <TextView
+            android:id="@+id/changingPPF_date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/input_changingPPF_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/changingtire_date"/>
+
+
+    <Button
+        android:id="@+id/input_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:text="등록"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
